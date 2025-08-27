@@ -1,0 +1,1132 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #f6f8fd;
+  --secondary-color: #ff096f;
+  --color-text: #231942;
+  --navbar-color: #ffffff;
+  --navbar-color-text: #000000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 24px;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.85); /* lebih soft */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar .nav-link a {
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar .nav-link a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.navbar .nav-link a.active {
+  background-color: #ff006a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 0, 106, 0.25);
+}
+
+.navbar .nav-link a.active:hover {
+  background-color: #e6005f;
+  color: white;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-link {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .navbar .nav-link a {
+    width: 100%;
+    margin: 4px 0;
+  }
+}
+
+
+
+
+/* White Outline */
+.btn-outline-white {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-white:hover {
+  background-color: white;
+  color: #000;
+  box-shadow: 0 0 10px white;
+}
+
+/* Pink Outline */
+.btn-outline-pink {
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-pink:hover {
+  background-color: #ff006a;
+  color: white;
+  border-color: #ff006a;
+  box-shadow: 0 0 12px rgba(255, 0, 106, 0.3);
+}
+
+/* Pink Text Outline (Dark Mode Look) */
+.btn-outline-dark {
+  color: #ff006a;
+  border: 2px solid #ff006a;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+  background-color: #ff006a;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 0, 106, 0.3);
+}
+
+/* Solid Pink Button */
+.btn-dark {
+  background-color: #ff006a;
+  color: white;
+  border: 2px solid #ff006a;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+  background-color: #cc0056;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 0, 106, 0.35);
+}
+
+
+/* STYLE NAVBAR */
+
+/* STYLE HOMEPAGE HEADER*/
+
+/* HEADER SECTION */
+header {
+  background-image: url('public/bg.jpg'); /* Sesuaikan path gambarnya */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 51px 0;
+  overflow: hidden;
+}
+
+
+.homepage .header-box {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.homepage .header-box h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 600;
+  color: var(--navbar-color);
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  --animate-delay: 0.5s;
+  
+}
+
+.homepage .header-box h1 span {
+  font-weight: 700;
+}
+
+.homepage .header-box p {
+  line-height: 1.6;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin-bottom: 2rem;
+  --animate-delay: 1s;
+}
+
+.homepage .header-box .button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.homepage .header-box button {
+  --animate-delay: 1.4s;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+.homepage .header-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* KELAS SECTION */
+.homepage .kelas {
+  background-color: var(--primary-color);
+  padding: 4rem 1rem;
+  width: 100%;
+}
+
+.homepage .kelas .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homepage .kelas .row:nth-child(1) {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.homepage .kelas .row:nth-child(1) h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.homepage .kelas .row:nth-child(1) p {
+  color: var(--color-text);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.homepage .kelas .row:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.homepage .kelas .row:nth-child(2) .col {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.homepage .kelas .row:nth-child(2) .col:hover {
+  transform: translateY(-5px);
+}
+
+.homepage .kelas .row:nth-child(2) img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.homepage .kelas .row:nth-child(2) .content {
+  padding: 1.5rem;
+}
+
+.homepage .kelas .row:nth-child(2) .star i {
+  color: gold;
+  font-size: 1rem;
+}
+
+.homepage .kelas .row:nth-child(2) h5 {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.homepage .kelas .row:nth-child(3) {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.homepage .anime-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.homepage .anime-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gambar */
+.homepage .anime-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Judul & Score */
+.homepage .anime-card h5 {
+  font-weight: bold;
+  color: var(--color-text);
+  font-size: 1rem;
+  margin-top: 0.75rem;
+}
+
+.homepage .anime-card .anime-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 1rem 1rem;
+  margin-top: auto;
+}
+
+.homepage .anime-card .anime-info p {
+  margin: 0;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.homepage .anime-card .anime-info a {
+  font-size: 0.875rem;
+}
+
+
+
+/* TESTIMONIAL SECTION */
+.homepage .testimonial {
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: white;
+}
+
+.homepage .testimonial .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homepage .testimonial h1 {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+
+.homepage .testimonial .swiper {
+  width: 100%;
+  padding: 0 1rem 3rem;
+}
+
+.homepage .testimonial .swiper-slide {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  height: auto;
+  cursor: grab;
+  transition: cursor 0.2s ease;
+}
+
+.homepage .testimonial .swiper-slide:active {
+  cursor: grabbing;
+}
+
+
+
+.homepage .testimonial .swiper-slide .desc {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.homepage .testimonial .swiper-slide .people {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homepage .testimonial .swiper-slide .people img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.homepage .testimonial .swiper-slide .people h5 {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.homepage .testimonial .swiper-slide .people p {
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 992px) {
+  .homepage .header-box {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 6rem;
+  }
+  
+  .homepage .header-box .button-group {
+    justify-content: center;
+  }
+  
+  .homepage .header-box img {
+    margin-top: 2rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 80px 0;
+  }
+  
+  .homepage .kelas .row:nth-child(2) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .homepage .testimonial .swiper {
+    padding: 0 0.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 60px 0;
+  }
+  
+  .homepage .header-box {
+    padding-top: 4rem;
+  }
+  
+  .homepage .kelas .row:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+  
+  .homepage .testimonial .swiper-slide {
+    padding: 1rem;
+  }
+  
+  .homepage .testimonial .swiper-slide .people img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .homepage .header-box .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .homepage .header-box button {
+    width: 100%;
+  }
+}
+
+/* STYLE HOMEPAGE TESTIMONIAL */
+
+/* STYLE FAQ */
+.faq {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--primary-color);
+}
+
+.faq h2 {
+  color: var(--color-text);
+  --animate-delay: 0.5s;
+}
+
+.faq .accordion .accordion-button {
+  color: var(--color-text);
+  font-weight: bold;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.faq .accordion .accordion-body {
+  background-color: #ffffff;
+}
+
+/* STYLE FAQ */
+
+/* === KELAS PAGE === */
+.kelas-page {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+/* Header Section */
+.kelas-page .row:nth-child(1) {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.kelas-page .row:nth-child(1) h1 {
+  color: var(--color-text);
+  --animate-delay: 0.5s;
+}
+
+.kelas-page .row:nth-child(1) p {
+  color: var(--color-text);
+}
+
+/* Anime Cards Grid (gunakan Bootstrap default grid, jangan pakai grid manual) */
+.kelas-page .anime-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.kelas-page .anime-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gambar */
+.kelas-page .anime-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Judul & Score */
+.kelas-page .anime-card h5 {
+  font-weight: bold;
+  color: var(--color-text);
+  font-size: 1rem;
+
+  margin-top: 0.75rem;
+}
+
+.kelas-page .anime-card .anime-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 1rem 1rem;
+  margin-top: auto;
+}
+
+.kelas-page .anime-card .anime-info p {
+  margin: 0;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.kelas-page .anime-card .anime-info a {
+  font-size: 0.875rem;
+}
+
+
+/* STYLE TESTIMONIAL */
+.testimonial-page {
+  background-color: var(--primary-color);
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+
+
+/* Heading section */
+.testimonial-page h1,
+.testimonial-page p {
+  color: var(--color-text);
+}
+
+/* Card style */
+.testimonial-page .testimonial-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.testimonial-page .testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial text */
+.testimonial-page .testimonial-card p {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* People section */
+.testimonial-page .testimonial-card .d-flex {
+  align-items: center;
+}
+
+.testimonial-page .testimonial-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial-page .testimonial-card h5 {
+  color: var(--color-text);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-page .testimonial-card p.text-muted {
+  opacity: 0.6;
+  margin: 0;
+}
+
+
+/* STYLE TESTIMONIAL */
+/* STYLE SYARAT & KETENTUAN */
+.syarat-ketentuan-page .syarat-ketentuan{
+ padding-top: 150px;
+ background-color: var(--primary-color);
+}
+
+.syarat-ketentuan-page .syarat-ketentuan p{
+  line-height: 2;
+
+}
+
+.syarat-ketentuan-page .syarat-ketentuan h1 {
+  --animate-delay: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE SYARAT & KETENTUAN */
+
+
+
+
+/* STYLE FOOTER */
+.footer {
+  width: 100%;
+  min-height: 60vh;
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) h1 {
+  color: var(--color-text);
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) .desc {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .no a,
+.footer .mail a {
+  display: flex;
+  align-items: center;
+  color: black;
+  column-gap: 5px;
+}
+
+.footer .no a:hover,
+.footer .mail a:hover {
+  color: var(--secondary-color);
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) {
+  gap: 10px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a:hover {
+  color: var(--secondary-color);
+}
+
+.footer .subscribes {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer .subscribes input {
+  padding: 5px;
+  width: 200px;
+  height: 38px;
+}
+
+.footer .social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .social i {
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer .social i:hover {
+  color: var(--secondary-color);
+}
+
+.footer .row:nth-child(2) {
+  margin-top: 100px;
+}
+
+/* STYLE FOOTER */
+
+
+/* src/pages/LoginPage.css */
+/* main.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background-color: #f5f6f7;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.login-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background-color: #4338ca;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 13px;
+  color: #999;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+.google-login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: #444;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.google-login-button:hover {
+  background-color: #f3f3f3;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.signup-link a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4f46e5;
+}
+@media (max-width: 768px) {
+  .login-card {
+    padding: 24px;
+  }
+
+  .login-header h2 {
+    font-size: 22px;
+  }
+
+  .login-header p,
+  .form-group label,
+  .form-group input,
+  .remember-forgot,
+  .remember-forgot label,
+  .forgot-password,
+  .login-button,
+  .google-login-button,
+  .signup-link {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    padding: 10px 12px;
+  }
+
+  .login-button,
+  .google-login-button {
+    padding: 10px;
+  }
+
+  .remember-forgot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* tambahkan ini untuk memberi jarak */
+}
+
+
+/* Fade In / Out Transition */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+
+/* shimer loading  */
+.anime-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.anime-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.anime-info {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.anime-info h5 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.anime-info p {
+  font-size: 0.875rem;
+}
+
+/* Shimmer effect */
+.shimmer {
+  animation: shimmer 1.5s infinite linear;
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+}
+
+.anime-text,
+.anime-button {
+  height: 20px;
+  border-radius: 4px;
+}
+
+.anime-img.shimmer-bg {
+  height: 300px;
+}
+
+.anime-button {
+  height: 30px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .anime-img {
+    height: 250px;
+  }
+}
+
+/* shimer loading  */
+
+
+.anime-banner-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.anime-banner-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  opacity: 0.5;
+  margin: 0 6px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.anime-banner-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+  .anime-banner-swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+  }
+}
