@@ -10,10 +10,10 @@ const SyaratKetenPage = () => {
             <Row>
               <Col>
                 <h1 className="fw-bold text-center mb-2 animate__animated animate__fadeInUp animate__delay-1s">
-                  Syarat & Ketentuan
+                  Panduan & Aturan Komunitas
                 </h1>
                 <p className="text-center animate__animated animate__fadeInUp animate__delay-1s">
-                  Halaman ini menjelaskan syarat dan ketentuan penggunaan layanan pemesanan tiket Kereta Api Indonesia. Mohon dibaca dengan seksama sebelum menggunakan layanan kami.
+                  Halaman ini berisi panduan umum dan aturan komunitas bagi semua otaku dan pecinta anime yang bergabung bersama kami.
                 </p>
               </Col>
             </Row>
@@ -21,43 +21,43 @@ const SyaratKetenPage = () => {
             <Row className="pt-5">
               <Col>
                 <p>
-                  Dengan mengakses dan menggunakan situs pemesanan tiket kereta ini, pengguna dianggap telah membaca, memahami, dan menyetujui semua isi dalam syarat dan ketentuan ini. Jika Anda tidak menyetujui salah satu atau semua ketentuan ini, kami sarankan untuk tidak menggunakan layanan kami.
+                  Dengan bergabung ke komunitas ini, kamu dianggap telah membaca dan setuju dengan semua panduan dan aturan yang berlaku. Yuk, kita ciptakan suasana seru, positif, dan saling menghargai antar sesama wibu!
                 </p>
               </Col>
             </Row>
 
             <Row>
               <Col>
-                <h4 className="fw-bold">1. Pemesanan Tiket</h4>
+                <h4 className="fw-bold">1. Etika Komunitas</h4>
                 <p>
-                  Tiket hanya dapat dipesan melalui situs resmi, aplikasi resmi, atau mitra penjualan yang telah ditunjuk oleh Kereta Api Indonesia. Pemesanan tiket wajib dilakukan dengan data penumpang yang benar dan sesuai dengan kartu identitas resmi.
+                  Hargai semua anggota komunitas, baik yang baru mulai nonton anime maupun yang sudah veteran. Tidak diperbolehkan melakukan penghinaan, diskriminasi, atau komentar toxic.
                 </p>
                 <p>
-                  Tiket yang telah dipesan dan dibayar akan dikirimkan dalam bentuk e-ticket yang harus ditunjukkan saat boarding. Perubahan jadwal, pembatalan, atau refund hanya dapat dilakukan sesuai dengan kebijakan yang berlaku.
-                </p>
-              </Col>
-            </Row>
-
-            <Row className="py-3">
-              <Col>
-                <h4 className="fw-bold">2. Ketentuan Penumpang</h4>
-                <p>
-                  Penumpang wajib datang tepat waktu ke stasiun dan melakukan boarding paling lambat 30 menit sebelum keberangkatan. Penumpang yang terlambat tidak akan diizinkan naik dan tiket dianggap hangus.
-                </p>
-                <p>
-                  Penumpang wajib menjaga ketertiban dan kenyamanan selama berada di area stasiun maupun di dalam kereta. Segala bentuk tindakan yang mengganggu penumpang lain dapat dikenakan sanksi.
+                  Hindari spoiler di ruang publik tanpa tanda peringatan. Gunakan tag spoiler jika ingin membahas cerita anime/manga terbaru.
                 </p>
               </Col>
             </Row>
 
             <Row className="py-3">
               <Col>
-                <h4 className="fw-bold">3. Barang Bawaan</h4>
+                <h4 className="fw-bold">2. Konten yang Dibagikan</h4>
                 <p>
-                  Setiap penumpang diperbolehkan membawa barang pribadi maksimal 20 kg tanpa dikenakan biaya tambahan. Barang berukuran besar atau dalam jumlah banyak dapat dikenakan biaya tambahan atau ditolak jika dianggap mengganggu keselamatan dan kenyamanan.
+                  Bebas berbagi fanart, rekomendasi anime, meme, hingga review episode terbaru, asalkan tidak mengandung unsur SARA, pornografi, atau kekerasan ekstrem.
                 </p>
                 <p>
-                  Barang-barang berbahaya seperti bahan peledak, senjata tajam, atau zat beracun dilarang dibawa ke dalam kereta api. Petugas berhak melakukan pemeriksaan keamanan sewaktu-waktu.
+                  Kami menghargai karya kreator. Jangan reupload fanart atau konten tanpa izin atau tanpa memberikan kredit yang pantas.
+                </p>
+              </Col>
+            </Row>
+
+            <Row className="py-3">
+              <Col>
+                <h4 className="fw-bold">3. Event & Kegiatan Komunitas</h4>
+                <p>
+                  Komunitas ini rutin mengadakan event seperti kuis anime, nobar (nonton bareng), cosplay virtual, dan diskusi episode terbaru. Pastikan kamu ikut meramaikan!
+                </p>
+                <p>
+                  Jadwal dan ketentuan tiap event akan diumumkan di grup dan media sosial komunitas. Patuhi ketentuan agar semua bisa menikmati keseruan bersama.
                 </p>
               </Col>
             </Row>

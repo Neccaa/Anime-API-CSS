@@ -8,13 +8,14 @@ const TestimonialsPage = () => {
       <Container>
         <Row className="mb-5">
           <Col>
-            <h1 className="text-center fw-bold animate__animated animate__fadeInUp animate__delay-1s">
-              Semua Testimonial
-            </h1>
-            <p className="text-center animate__animated animate__fadeInUp animate__delay-1s">
-              Kami sangat menghargai setiap pengalaman berharga dari pengguna kami.
-              Inilah beberapa testimonial pilihan dari pelanggan yang puas.
-            </p>
+           <h1 className="text-center fw-bold animate__animated animate__fadeInUp animate__delay-1s">
+  Review Anime dari Penggemar
+</h1>
+<p className="text-center animate__animated animate__fadeInUp animate__delay-1s">
+  Kumpulan pendapat dan kesan menarik dari para penonton anime sejati. 
+  Temukan anime favoritmu lewat pengalaman mereka!
+</p>
+
           </Col>
         </Row>
 

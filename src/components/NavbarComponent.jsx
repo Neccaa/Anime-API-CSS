@@ -37,66 +37,67 @@ const NavbarComponent = () => {
     localStorage.removeItem("isLoggedIn");
     localStorage.removeItem("userEmail");
     setIsLoggedIn(false);
-    navigate("/"); // Kembali ke halaman Home
+    navigate("/");
   };
 
   return (
-    <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
-      <Container>
+    <Navbar
+      expand="lg"
+      className={`navbar custom-navbar ${changeColor ? "color-active" : ""}`}
+      fixed="top"
+    >
+      <Container fluid="lg">
         <Navbar.Brand href="/">
           <img
-            src="/src/assets/img/logo-kereta.gif"
+            src="/src/assets/img/logo-kereta.png"
             alt="Logo Kereta Api Indonesia"
             height="40"
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <div className="d-flex flex-grow-1 justify-content-center">
-            <Nav className="text-center d-flex flex-column flex-lg-row align-items-center gap-3">
-              {navLinks.map((link) => (
-                <div className="nav-link" key={link.id}>
-                  <NavLink
-                    to={link.path}
-                    className={({ isActive }) =>
-                      `nav-item-link ${isActive ? "active" : ""} ${changeColor ? "scrolled" : ""}`
-                    }
-                    end
-                  >
-                    {link.text}
-                  </NavLink>
-                </div>
-              ))}
-            </Nav>
-          </div>
+        <Navbar.Toggle aria-controls="main-navbar" />
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="mx-auto d-flex flex-column flex-lg-row align-items-center gap-2 gap-lg-3 mt-3 mt-lg-0">
+            {navLinks.map((link) => (
+              <div className="nav-link" key={link.id}>
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `nav-item-link ${isActive ? "active" : ""} ${changeColor ? "scrolled" : ""}`
+                  }
+                  end
+                >
+                  {link.text}
+                </NavLink>
+              </div>
+            ))}
+          </Nav>
 
-          <div className="ms-auto text-center mt-3 mt-lg-0">
+          <div className="text-center mt-3 mt-lg-0 d-flex align-items-center justify-content-center gap-2">
             {isLoggedIn ? (
               <NavDropdown
                 title={
                   userEmail
-                    ? userEmail.substring(0, 1).toUpperCase() + "***"
+                    ? userEmail.charAt(0).toUpperCase() + "***"
                     : "USER"
                 }
-                id="basic-nav-dropdown"
+                id="user-nav-dropdown"
                 align="end"
               >
-               <NavDropdown.Item
-  onClick={handleLogout}
-  className="d-flex align-items-center gap-2 py-2 px-3 text-danger fw-semibold logout-item"
->
-  <i className="fa-solid fa-right-from-bracket"></i>
-  Keluar
-</NavDropdown.Item>
-
+                <NavDropdown.Item
+                  onClick={handleLogout}
+                  className="d-flex align-items-center gap-2 py-2 px-3 text-danger fw-semibold logout-item"
+                >
+                  <i className="fa-solid fa-right-from-bracket"></i>
+                  Keluar
+                </NavDropdown.Item>
               </NavDropdown>
             ) : (
               <>
                 <NavLink
                   to="/login"
-                  className="btn btn-outline-dark rounded-1 px-4 me-2"
+                  className="btn btn-outline-dark rounded-1 px-4"
                 >
                   Login
                 </NavLink>
